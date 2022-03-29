@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body{
+  background: 	#B0C4DE;
+  color: #202124;
+  /* размер шрифта */
+  font-size: 16px;
+  /* жирность шрифта */
+  font-weight:normal;
+  /* тип шрифта */
+  font-family:'Roboto', sans-serif;
+}
+a {
+  color: black ;
+  /* убрать подчеркивание */
+  text-decoration: none;
+}
+
+/* при наведении курсора на ссылку */
+a:hover{
+  text-decoration: underline;
+}
+/* при нажатии на ссылку мышкой */
+a:active{
+  color:blue;
+}
+/* ссылка была открыта */
+a:visited{
+  color: grey;
+}
+
+
+.conteiner{
+  border: solid;
+  border-radius: 28px;
+  background: #778899;
+  max-width: 60%;
+  margin:auto;
+  padding: 10px 50px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.95);
+}
+.conteiner h1{
+  text-align: center;
+  margin-top:  0px auto;
+
+}
+.avatar{
+  width: 300px;
+  /* height: 30%; */
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.95);
+}
+.info{
+  display: flex;
+  margin-bottom:  20px;
+}
+.info-text{
+  margin-left: 40px;
+}
+.info-text h4{
+  margin-bottom: 5px;
+}
+
+.card{
+  /* background: #808080; */
+  border-radius: 28px;
+  padding: 5px 0px 10px 20px;
+  margin: 10px;
+}
+.bg-yellow{
+  background: #fff9dc;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.95);
+}
+.bg-green{
+  background: #e5ffe7;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.95);
+}
+.bg-red{
+  background: #ffe5e5;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.95);
+  /* по центру справа или слева */
+  text-align: center;
+
+}
+
+@media (max-width:700px) {
+  .info{
+    /* при сужении экрана элементы переставляются вниз блоками */
+    display: block;
+
+    /* при определенном сужении блоки выставляются по центру,что хорошо для мобильных устройств */
+    text-align: center;
+
+  }
+}
